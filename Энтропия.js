@@ -11,16 +11,12 @@ for (let i = 0; i < string.length; i++)
 	console.log(alphabet[string.charAt(i)]++);//количество
 for (let i in alphabet)
 {
- 	if (alphabet[i] != 0)
- 	{
  		alphabet[i] = alphabet[i] / string.length;
  		number++;
- 	}
 }
 if (number != 1)
 {
 	for (let i in alphabet) 
-		if (alphabet[i] != 0)
- 			entropy += -(alphabet[i] * GetBaseLog(number, alphabet[i]));
+ 		entropy += -(alphabet[i] * GetBaseLog(number, alphabet[i]));
 }
 console.log(entropy);
